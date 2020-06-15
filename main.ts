@@ -10,5 +10,8 @@ console.log(`calling webhook for ${eventName} with`, value1, value2, value3);
 
 await fetch(`https://maker.ifttt.com/trigger/${eventName}/with/key/${key}`, {
   method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
   body: JSON.stringify({ value1, value2, value3 }),
 });
