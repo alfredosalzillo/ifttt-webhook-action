@@ -1,10 +1,10 @@
 const input = (key: string) => Deno.env.get(`INPUT_${key}`);
 
 const eventName = input('EVENT');
-const key = input('key');
-const value1 = input('value1');
-const value2 = input('value2');
-const value3 = input('value3');
+const key = input('KEY');
+const value1 = input('VALUE1');
+const value2 = input('VALUE2');
+const value3 = input('VALUE3');
 
 console.log(`calling webhook for ${eventName} with`, value1, value2, value3);
 
