@@ -5,20 +5,18 @@ inputs:
   event:  # id of input
     description: 'IFTTT webhook event'
     required: true
-   key:
+  key:
      description: 'IFTTT webhook key'
      required: true
-   value1:
+  value1:
      description: 'IFTTT webhook optiona parameter'
      required: false
-   value2:
+  value2:
      description: 'IFTTT webhook optiona parameter'
      required: false
-   value3:
+  value3:
      description: 'IFTTT webhook optiona parameter'
      required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs. }}
