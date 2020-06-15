@@ -1,7 +1,5 @@
 FROM hayd/alpine-deno:1.1.0
 
-EXPOSE 1993  # The port that your application listens to.
-
 WORKDIR /app
 
 # Prefer not to run as root.
